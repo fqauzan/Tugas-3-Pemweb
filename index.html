@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasiswa ITERA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <p class="logo">ITERA <span>• PENDAFTARAN MAHASISWA</span></p>
+    </header>
+
+    <main class="layout">
+        <section class="info">
+            <p class="label">FORMULIR PENDAFTARAN</p>
+            <h1>Mulai perjalanan akademikmu di sini.</h1>
+            <p class="deskripsi">
+                Lengkapi data diri dengan benar untuk simulasi
+                pendaftaran mahasiswa.
+            </p>
+
+            <div class="catatan">
+                <strong>Sebelum mengisi</strong>
+                <p>Pastikan nama, NIM, program studi, dan email sudah benar.</p>
+            </div>
+
+            <p class="nomor">TUGAS INDIVIDU 3 · PEMWEB</p>
+        </section>
+
+        <section class="form-panel">
+            <h2>Data Pendaftar</h2>
+            <p class="subjudul">Isi semua kolom berikut.</p>
+
+            <form action="detail.html" method="GET">
+                <label for="nama">Nama lengkap</label>
+                <input type="text" id="nama" name="nama"
+                       placeholder="Masukkan nama lengkap" required>
+
+                <label for="nim">NIM</label>
+                <input type="text" id="nim" name="nim"
+                       placeholder="Masukkan NIM" required>
+
+                <label for="prodi">Program studi</label>
+                <select id="prodi" name="prodi" required>
+                    <option value="">Pilih program studi</option>
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Teknik Geomatika">Teknik Geomatika</option>
+                    <option value="Teknik Sipil">Teknik Sipil</option>
+                    <option value="Teknik Elektro">Teknik Elektro</option>
+                </select>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"
+                       placeholder="nama@email.com" required>
+
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" name="alamat" rows="3"
+                          placeholder="Masukkan alamat" required></textarea>
+
+                <button type="submit">Kirim Pendaftaran ↗</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>Tugas Pengembangan Aplikasi Web · 2026</footer>
+
+</body>
+</html>
