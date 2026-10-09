@@ -1,0 +1,220 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f0e7;
+    color: #303b32;
+}
+
+header {
+    padding: 18px 8%;
+    border-bottom: 1px solid #d9d7ca;
+}
+
+.logo {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #75816b;
+    font-size: 11px;
+    letter-spacing: 0;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    max-width: 1050px;
+    margin: 55px auto;
+    padding: 0 25px;
+    align-items: start;
+}
+
+.info {
+    padding: 25px 10px;
+}
+
+.label {
+    color: #a65f43;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 18px 0;
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+.deskripsi {
+    color: #697066;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.catatan {
+    margin-top: 30px;
+    padding: 18px;
+    background-color: #e3e7d9;
+    border-left: 4px solid #75816b;
+    line-height: 1.6;
+    font-size: 13px;
+}
+
+.nomor {
+    margin-top: 55px;
+    color: #858779;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.form-panel,
+.detail-panel {
+    padding: 30px;
+    background-color: #fffdf7;
+    border: 1px solid #dedbce;
+    border-radius: 5px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 23px;
+}
+
+.subjudul {
+    margin-bottom: 25px;
+    color: #7b7c71;
+    font-size: 13px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+label {
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d5d4c9;
+    border-radius: 3px;
+    background-color: #fffefa;
+    color: #303b32;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #bdc9ad;
+    border-color: #75816b;
+}
+
+button,
+.tombol {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 13px 16px;
+    background-color: #52684f;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+button:hover,
+.tombol:hover {
+    background-color: #394d38;
+}
+
+.detail-panel {
+    max-width: 750px;
+    margin: 55px auto;
+}
+
+table {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th,
+td {
+    padding: 14px;
+    border-bottom: 1px solid #dedbce;
+    text-align: left;
+}
+
+th {
+    background-color: #52684f;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1e8;
+}
+
+tr:hover {
+    background-color: #e7eadf;
+}
+
+.catatan-kecil {
+    margin-top: 20px;
+    color: #858779;
+    font-size: 12px;
+}
+
+footer {
+    padding: 20px;
+    color: #858779;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 25px auto;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .form-panel,
+    .detail-panel {
+        padding: 20px;
+    }
+
+    .detail-panel {
+        margin: 25px 15px;
+        overflow-x: auto;
+    }
+
+    header {
+        padding: 18px 6%;
+    }
+}
